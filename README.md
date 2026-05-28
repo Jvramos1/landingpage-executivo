@@ -1,5 +1,7 @@
 # Executive Digital Landing Page
 
+![Preview da Landing Page](./public/preview.png)
+
 Landing page corporativa de alto nível desenvolvida com foco em sofisticação visual e motion design avançado. O projeto utiliza uma arquitetura baseada em **React** e **Vite**, combinando animações performáticas via Framer Motion e rolagem fluida via Lenis.
 
 ## 🚀 Tecnologias e Stack

@@ -1,0 +1,42 @@
+.about-section {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.glow-background {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 60vw;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,0.04) 0%, transparent 60%);
+  pointer-events: none;
+  z-index: -1;
+  filter: blur(40px);
+}
+
+.about-statement-text {
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-align: center;
+  max-width: 1200px;
+  line-height: 1.3;
+  font-weight: 400;
+  color: var(--text-primary);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.word-wrapper {
+  position: relative;
+  display: inline-flex;
+  margin-right: 0.25em; /* Espaço entre as palavras */
+  margin-bottom: 0.1em;
+}
+
+/* Opcional: Destacar certas palavras-chave via nth-child, ou podemos deixar o Framer Motion brilhar sozinho */

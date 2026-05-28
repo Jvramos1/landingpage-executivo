@@ -54,16 +54,7 @@ src/
 └── index.css                # Única fonte de verdade para Design Tokens (cores chumbo/off-white) e tipografia
 ```
 
-## 🛠️ Decisões Técnicas (ADRs Implícitos)
 
-1. **Por que CSS Vanilla e não TailwindCSS?**
-   - Para este nível de exigência visual (Frontend Criativo), classes utilitárias podem poluir a leitura do markup. O uso de CSS Vanilla com variáveis (`--bg-primary`, `--spacing-2xl`) garante controle total sobre microinterações e manutenção de um design system autoral sem depender de configurações externas de frameworks CSS.
-
-2. **Framer Motion `whileInView` vs `useScroll`:**
-   - Para contornar dessincronizações de cálculo (Invariant Violations do Framer Motion) ao animar blocos complexos de texto dentro do contêiner modificado pelo Lenis, a técnica escolhida no componente `AboutStatement` foi utilizar `staggerChildren` com `whileInView`. Isso assegura uma entrega visual de altíssima fidelidade que não crasha ao navegar ou redimensionar a página.
-
-3. **Scroll Restoration Manual:**
-   - Integrado diretamente no wrapper `SmoothScroll`, forçamos o `window.scrollTo(0,0)` para que experiências imersivas não iniciem "quebradas" do meio da tela quando os usuários recarregam a página via *F5*.
 
 ## 🔧 Scripts Disponíveis
 
